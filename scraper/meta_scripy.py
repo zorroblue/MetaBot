@@ -147,9 +147,14 @@ def how_to():
 			list.append(temp)
 	return list
 
-def get_how_to(s):
+def get_how_to(l):
 	list=[]
 	list=how_to()
+	c=[]
+	c=l.split("-")
+	s=""
+	for item in c:
+		s=s+item+" "
 	sim=0
 	temp=HowTo()
 	for item in list:
