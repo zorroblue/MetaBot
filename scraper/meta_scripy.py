@@ -3,6 +3,9 @@ import datetime
 import urllib2
 import requests
 import datetime
+from pyjarowinkler import distance
+from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.metrics.pairwise import cosine_similarity
 
 class eat_spots:
 	info=False
@@ -127,11 +130,43 @@ def get_eat_spots():
    	        print "done for" +item
    	return list 
 
+class HowTo:
+	name=""
+	url=""
+
+def how_to():
+	list=[]
+	headers = {'Accept-Encoding': 'identity'}
+	r = requests.get('https://wiki.metakgp.org/w/List_of_how-tos', headers=headers)
+	soup = BeautifulSoup(r.text,"html.parser")
+	for link in soup.findAll('a',text=True):
+		if link.contents[0][:6]=='How to':
+			temp=HowTo()
+			temp.name=link.contents[0]
+			temp.url='https://wiki.metakgp.org'+link.get('href')
+			list.append(temp)
+	return list
+
+def get_how_to(l):
+	list=[]
+	list=how_to()
+	c=[]
+	c=l.split("-")
+	s=""
+	for item in c:
+		s=s+item+" "
+	sim=0
+	temp=HowTo()
+	for item in list:
+		tfidf_vectorizer=TfidfVectorizer(analyzer="char")
+		documents=(s,item.name)
+		tfidf_matrix=tfidf_vectorizer.fit_transform(documents)
+		cs=cosine_similarity(tfidf_matrix[0:1],tfidf_matrix)
+		if cs[0][1]>sim:
+			sim=cs[0][1]
+			temp=item
+	return temp
 
 
-    		
-list=[]
-list=get_eat_spots()
-for item in list:
-	print item.start
-	
+
+
