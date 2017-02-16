@@ -20,7 +20,7 @@ for course MA10001.
 
 ## Description
 
-Most of our data source is [Meta Kgp](https://wiki.metakgp.org/w/Main_Page) - a media wiki for IIT Kgp maintained by the students of IIT Kgp.
+Most of our data source is [MetaKGP](https://wiki.metakgp.org/w/Main_Page) - a media wiki for IIT Kgp maintained by the students of IIT Kgp.
 The front-end is made in visual studio using bot framework template integrated with LUIS for NLP functionalities. Once the querry is parsed and
 the underlying intent of the querry understood, the bot extracts information from appropriate sources most of which is maintained by
 our python script deployed in Heroku cloud server which updates the cache every 15-30 minutes using REST APIs to provide real time data.
@@ -30,9 +30,9 @@ previous year's paper for specific courses. If you have any more interesting fea
 
 ## Contributors
 
-1. Rameshwar Bhaskaran
-2. Apurv Kumar
-3. Shubham Sharma
+1. [Rameshwar Bhaskaran](https://github.com/zorroblue)
+2. [Apurv Kumar](https://github.com/apurv1205)
+3. [Shubham Sharma](https://github.com/shubham4060)
 
 ## License
 
