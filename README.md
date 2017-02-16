@@ -28,8 +28,13 @@ our python script deployed in Heroku cloud server which updates the cache every 
 The bot is in development stage with much of feature integration to be done. Some future features to be integrated are professor's information.
 previous year's paper for specific courses. If you have any more interesting features in mind, please add it in the issues.
 
+## Contributors
+
+1. Rameshwar Bhaskaran
+2. Apurv Kumar
+3. Shubham Sharma
 
 ## License
 
-[![CC0](https://licensebuttons.net/p/zero/1.0/88x31.png)](https://creativecommons.org/publicdomain/zero/1.0/)
+MIT License
 
