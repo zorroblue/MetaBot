@@ -1,7 +1,7 @@
 # MetaBot
 > Virtual assistant chat bot for IIT Kharagpur
 
-A chat bot for IIT Kharagpur, soon to be deployed of facebook messenger in the form of a public page. Users can message the page
+A chat bot for IIT Kharagpur, soon to be deployed on facebook messenger in the form of a public page. Users can message the page
 and the chat bot will analyse and produce appropriate responses to their querries. Some sample queries and their generated responses are:
 - What's new ?  : Will provide top latest news from four channels namely awaaz, scholar's avenue, IIT Kgp Tech and Gymkhana based
 on the user's feedback in the prompt generated.
@@ -13,7 +13,7 @@ for course MA10001.
 
 ## Tools
 
-- Lis for parsing the queries and extracting intents using NLP based ML models - https://www.luis.ai/
+- Luis for parsing the queries and extracting intents using NLP based ML models - https://www.luis.ai/
 - Visual Studio 2015 with bot framework template
 - Azure cloud services for deploying our bot- https://azure.microsoft.com/en-in/
 - Heroku for deploying our scraping scripts- https://dashboard.heroku.com/
