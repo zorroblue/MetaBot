@@ -11,6 +11,12 @@ which are probably open now.
 for course MA10001.
 - How to setup proxy ? : Will provide detailed instruction on how to setup proxy for using internet from whithin the institute
 
+## Maintainers
+
+1. [Rameshwar Bhaskaran](https://github.com/zorroblue)
+2. [Apurv Kumar](https://github.com/apurv1205)
+3. [Shubham Sharma](https://github.com/shubham4060)
+
 ## Tools
 
 - Luis for parsing the queries and extracting intents using NLP based ML models - https://www.luis.ai/
@@ -21,18 +27,13 @@ for course MA10001.
 ## Description
 
 Most of our data source is [MetaKGP](https://wiki.metakgp.org/w/Main_Page) - a media wiki for IIT Kgp maintained by the students of IIT Kgp.
-The front-end is made in visual studio using bot framework template integrated with LUIS for NLP functionalities. Once the querry is parsed and
-the underlying intent of the querry understood, the bot extracts information from appropriate sources most of which is maintained by
+The front-end is made using bot framework template integrated with LUIS for NLP functionalities. Once the query is parsed and
+the underlying intent of the query understood, the bot extracts information from appropriate sources most of which is maintained by
 our python script deployed in Heroku cloud server which updates the cache every 15-30 minutes using REST APIs to provide real time data.
 
 The bot is in development stage with much of feature integration to be done. Some future features to be integrated are professor's information.
 previous year's paper for specific courses. If you have any more interesting features in mind, please add it in the issues.
 
-## Contributors
-
-1. [Rameshwar Bhaskaran](https://github.com/zorroblue)
-2. [Apurv Kumar](https://github.com/apurv1205)
-3. [Shubham Sharma](https://github.com/shubham4060)
 
 ## License
 
