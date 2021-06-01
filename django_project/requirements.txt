@@ -19,4 +19,4 @@ scipy==0.18.1
 six==1.10.0
 sklearn==0.0
 South==1.0.2
-urllib3==1.19.1
+urllib3==1.26.5
