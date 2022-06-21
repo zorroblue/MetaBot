@@ -8,7 +8,7 @@ gunicorn==19.6.0
 idna==2.2
 ipaddress==1.0.18
 ndg-httpsclient==0.4.2
-numpy==1.11.3
+numpy==1.22.0
 pyasn1==0.1.9
 pycparser==2.17
 pyjarowinkler==1.8
